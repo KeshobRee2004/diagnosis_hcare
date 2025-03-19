@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Diagnosis</title>
+    <link rel="stylesheet" href="style_diag.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">AI Medical Diagnosis</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="diagnosis.html">Diagnosis</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="diagnosis-container">
+            <h2>Medical Diagnosis Form</h2>
+            <p>Fill in your details and get an AI-generated medical report.</p>
+
+            <form id="diagnosisForm">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <label for="symptoms">Symptoms:</label>
+                <textarea id="symptoms" name="symptoms" required></textarea>
+
+                <label for="medicalHistory">Medical History:</label>
+                <textarea id="medicalHistory" name="medicalHistory" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="loading" class="hidden">Processing...</div>
+
+            <div id="result" class="hidden">
+                <h3>Diagnosis Report</h3>
+                <pre id="reportOutput"></pre>
+                <button onclick="downloadReport()">Download Report</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AI Medical Diagnosis | All Rights Reserved</p>
+    </footer>
+
+    <script src="script_diag.js"></script>
+</body>
+</html>
