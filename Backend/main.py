@@ -47,20 +47,29 @@ def generate_medical_report(data: PatientInfo):
 
     ### Required Output (in JSON format):
     {{
-        "disease": "The most probable disease in 1-2 lines.",
-        "disease_summary": "Brief explanation of the disease.",
-        "primary_recommendations": "Immediate steps the patient should take.",
-        "doctor_specialty": "Which doctor to consult (e.g., Cardiologist, Neurologist).",
-        "possible_causes": "List of possible causes of the disease.",
-        "diagnostic_tests": "Recommended medical tests (e.g., Blood test, MRI, X-ray).",
-        "treatment_options": "General treatment options available.",
-        "risk_factors": "Factors that increase the risk of this disease.",
-        "prevention_tips": "Tips to prevent this disease in the future.",
-        "emergency_signs": "When to seek emergency medical help.",
-        "lifestyle_tips": "General lifestyle changes to manage this condition."
+        "diagnosis": {{
+            "disease": "The most probable disease in 1-2 lines.",
+            "summary": "Brief explanation of the disease.",
+            "severity": "Mild/Moderate/Severe"
+        }},
+        "immediate_actions": {{
+            "steps": ["Step 1", "Step 2"],
+            "emergency_signs": ["Sign 1", "Sign 2"]
+        }},
+        "medical_recommendations": {{
+            "specialist_to_consult": "Cardiologist, Neurologist, etc.",
+            "recommended_tests": ["Blood test", "MRI", "X-ray"],
+            "treatment_options": ["Medication", "Therapy", "Surgery"]
+        }},
+        "risk_factors": {{
+            "causes": ["Cause 1", "Cause 2"],
+            "high_risk_groups": ["Elderly", "Diabetics"]
+        }},
+        "preventive_measures": {{
+            "prevention_tips": ["Tip 1", "Tip 2"],
+            "lifestyle_changes": ["Exercise", "Balanced diet", "Quit smoking"]
+        }}
     }}
-
-    **Important:** Do NOT include speculative information or unrelated content.
     """
 
     try:
