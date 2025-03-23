@@ -50,7 +50,7 @@ Before running the application, ensure you have the following installed:
 5. **Set Up Environment Variables**
    Create a `.env` file in the `Backend` directory and add your Gemini API key:
    ```plaintext
-   GEMINI_API_KEY=your_gemini_api_key_here
+   GOOGLE_API_KEY=your_gemini_api_key_here
    ```
 
 ---
