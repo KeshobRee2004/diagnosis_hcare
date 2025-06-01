@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Diagnosis</title>
+    <title>AI Medical Diagnosis</title>
     <link rel="stylesheet" href="style_diag.css">
 </head>
 <body>
@@ -17,93 +17,48 @@
     </nav>
 
     <main>
-        <section class="diagnosis-container">
-            <h2>Medical Diagnosis Form</h2>
-            <p>Fill in your details and get an AI-generated medical report.</p>
+    <section class="diagnosis-container">
+        <h2>Medical Diagnosis Form</h2>
+        <p>Fill in your details and get an AI-generated medical report.</p>
 
-            <form id="diagnosisForm">
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" required>
+        <form id="diagnosisForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
 
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" required>
-                    <option value="">Select</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
 
-                <label for="weight">Weight (kg):</label>
-                <input type="number" id="weight" name="weight" required>
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
 
-                <label for="symptoms">Symptoms:</label>
-                <textarea id="symptoms" name="symptoms" required></textarea>
+            <label for="symptoms">Symptoms:</label>
+            <textarea id="symptoms" name="symptoms" required></textarea>
 
-                <label for="medicalHistory">Medical History:</label>
-                <textarea id="medicalHistory" name="medicalHistory" required></textarea>
+            <label for="medicalHistory">Medical History:</label>
+            <textarea id="medicalHistory" name="medicalHistory" required></textarea>
 
-                <button type="submit">Submit</button>
-            </form>
+            <button type="submit">Submit</button>
+        </form>
 
-            <div id="loading" class="hidden">Processing...</div>
+        <div id="loading" class="hidden">Processing...</div>
 
-            <!-- Result Section -->
-            <div id="result" class="hidden"></div>
-        </section>
-    </main>
+        <!-- This is the new formatted A4 report section -->
+        <div id="reportContainer" class="hidden a4-page">
+            <h1>Medical Diagnosis Report</h1>
+            <div id="reportContent"></div>
+        </div>
+    </section>
+</main>
 
     <footer>
         <p>&copy; 2025 AI Medical Diagnosis | All Rights Reserved</p>
     </footer>
 
-    <script src="script_diag4.js"></script>
+    <script src="script_diag5.js"></script>
 </body>
 </html>
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Diagnosis</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
-        h2, h3 { color: #007bff; }
-        p { font-size: 16px; }
-        #result { border: 1px solid #ddd; padding: 15px; margin-top: 20px; background: #f9f9f9; }
-    </style>
-</head>
-<body>
-
-    <h1>Medical Diagnosis Form</h1>
-    <form id="diagnosisForm">
-        <label for="age">Age:</label>
-        <input type="number" id="age" required><br><br>
-
-        <label for="gender">Gender:</label>
-        <select id="gender" required>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-        </select><br><br>
-
-        <label for="weight">Weight (kg):</label>
-        <input type="number" id="weight" step="0.1" required><br><br>
-
-        <label for="symptoms">Symptoms:</label>
-        <textarea id="symptoms" required></textarea><br><br>
-
-        <label for="medicalHistory">Medical History:</label>
-        <textarea id="medicalHistory"></textarea><br><br>
-
-        <button type="submit">Get Diagnosis</button>
-    </form>
-
-    <div id="result"></div>
-
-    <script src="script_diag4.js"></script>
-
-</body>
-</html> -->
-

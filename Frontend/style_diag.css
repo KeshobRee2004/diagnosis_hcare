@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
     background-color: #f4f8fb;
 }
 
@@ -47,7 +48,7 @@ nav ul li a:hover {
 /* Diagnosis Form */
 .diagnosis-container {
     max-width: 500px;
-    margin: 50px auto;
+    margin: 0px auto;
     background: white;
     padding: 20px;
     border-radius: 8px;
