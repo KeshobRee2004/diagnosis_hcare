@@ -6,34 +6,49 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #ffff;
+
 }
 
 /* Navbar */
-.navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 15px 10%;
+.navbar{
+    width:100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    justify-content: space-between;
+    height: 60px;
 }
+#left-container{
+height: 100%;
+width: 40%;
+display:flex;
+align-items: center;
+justify-content: center;
+/* background-color: yellow; */
+}
+#right-container{
+padding-left:40%;
+height: 100%;
+width: 60%;
+background-color:#0cb3c9 ;
+border-bottom-left-radius: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 400px;
+}
+
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #007BFF;
+    color: #0cb3c9;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 .nav-links li {
@@ -41,27 +56,31 @@ body {
 }
 
 .nav-links a {
-    color: #007BFF;
+    color: #ffff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: 8px 15px;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    background: #007BFF;
+    background: #7debf3;
     color: white;
     border-radius: 5px;
 }
 
 /* Mobile Menu */
 .menu-toggle {
+    color: red;
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
+body::-webkit-scrollbar {
+    display: none;              /* Chrome/Safari */
+}
 /* Header Section */
 .header {
     background: url('medical-background.jpg') no-repeat center center/cover;
@@ -75,16 +94,18 @@ body {
 }
 
 .header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    background: #ffff;
+    color:rgb(193, 198, 202)
 }
 
 .header p {
     font-size: 1.3rem;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .header .btn {
-    background: #007BFF;
+    background: #32d4e0;
     color: white;
     padding: 15px 25px;
     text-decoration: none;
@@ -96,7 +117,7 @@ body {
 }
 
 .header .btn:hover {
-    background: #0056b3;
+    background: #28bccf;
 }
 
 /* Intro Section */
@@ -208,4 +229,4 @@ footer {
     .nav-links.active {
         display: flex;
     }
-}
+} 

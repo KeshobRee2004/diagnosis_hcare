@@ -1,20 +1,25 @@
-/* General Styling */
+/* General Styling*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     background-color: #f4f8fb;
 }
 
 /* Navigation Bar */
 nav {
+    height: 5%;
+    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007bff;
+    background-color: #0cb3c9;
     padding: 15px 20px;
     color: white;
+}
+main{
+    height: 84%;
 }
 
 nav .logo {
@@ -37,6 +42,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size:15px;
     font-weight: 500;
     transition: color 0.3s;
 }
@@ -45,29 +51,56 @@ nav ul li a:hover {
     color: #d4e2f0;
 }
 
+
 /* Diagnosis Form */
 .diagnosis-container {
-    max-width: 500px;
-    margin: 0px auto;
+    /* padding-top: 15px; */
+    max-width: 450px;
+    margin:auto auto;
     background: white;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #007bff;
+    color: #0cb3c9;
     text-align: center;
+    /* margin:0.2rem; */
 }
+.diagnosis-container p{
+    padding-left: 10px;
+    margin-top: 5px;
+}
+#diagnosisForm{
+    height: 300px;
+    padding: 20px;
 
+}
+#form-top{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+#form-top label{
+    display: inline-block;
+}
+/* change */
 form label {
-    display: block;
-    font-weight: bold;
+    display:block;
+    font-size: 0.8rem;
+    /* font-weight: bold; */
     margin-top: 10px;
 }
-
-input, select, textarea {
-    width: 100%;
+input{
+    width:20%
+}
+select{
+    width: 20%;
+}
+textarea{
+    width: 95%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -75,18 +108,20 @@ input, select, textarea {
     font-size: 1rem;
 }
 
+
 textarea {
     resize: vertical;
-    min-height: 80px;
+    min-height: 50px;
 }
 
 button {
-    width: 100%;
-    background-color: #007bff;
+    width: 20%;
+    margin-left: 40%;
+    background-color: #0cb3c9;
     color: white;
     padding: 10px;
     border: none;
-    margin-top: 15px;
+    margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 1rem;
@@ -94,7 +129,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #03aac0;
 }
 
 /* Loading Indicator */
@@ -121,9 +156,9 @@ button:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    background-color: #007bff;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #0cb3c9;
     color: white;
     font-size: 0.9rem;
 }
@@ -145,4 +180,4 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-}
+} 
